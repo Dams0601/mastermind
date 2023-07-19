@@ -87,6 +87,13 @@ function verification(ligne, combinaison){
             }
         }
     }
+
+    for (let i=0; i<temp.length; i++){
+        if (temp[i]!="x" && temp[i]!="y"){
+            ligne[i].classList.add('nonpresent');
+        }
+
+    }
     life-=1;
     if (life==0 || bienplace == 5){
         setTimeout(function() {
@@ -126,7 +133,7 @@ let pionmarron = document.getElementById("pionmarron");
 for (let i=0; i<lignes.length; i++){
     lignes[i].addEventListener("click", function() {
         let ligne = sousListe(document.getElementsByClassName('rondVide'),numligne*5, (numligne+1)*5);
-        if (i>=numligne*5 && i<=(numligne+1)*5){
+        if (i>=numligne*5 && i<(numligne+1)*5){
             if (this.classList.length>1){
                 const classeARetirer = this.className.split(' ')[1];
                 this.classList.remove(classeARetirer);

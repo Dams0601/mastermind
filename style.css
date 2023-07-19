@@ -73,14 +73,17 @@ body {
 
 .bienplace {
     border: 3px solid #22ff00;
+    transition: 0.2s all;
 }
 
 .malplace {
     border: 3px solid #ffae00;
+    transition: 0.2s all;
 }
 
 .nonpresent {
     border: 3px solid #ff0000;
+    transition: 0.2s all;
 }
 
 
