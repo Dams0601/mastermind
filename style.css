@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* INTERFACE JEU */
+#jeu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    border: 2px solid black;
+    min-height: 890px;
+    width: 450px;
+    background: #0f0f0f;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.rondVide {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background: #ffffff;
+    padding: 3px;
+    border: 3px solid #535353;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    background: #0f0f0f;
+}
+
+.rondVide:nth-child(5n){
+    margin-right: 0px;
+}
+
+
+.orange{
+    background: #ff8419;
+}
+.vert{
+    background: #36c113;
+}
+.bleu{
+    background: #1994ff;
+}
+.jaune{
+    background: #c6bc00;
+}
+.rouge{
+    background: #ff1919;
+}
+.marron{
+    background: #a65000;
+}
+
+.bienplace {
+    border: 3px solid #22ff00;
+}
+
+.malplace {
+    border: 3px solid #ffae00;
+}
+
+.nonpresent {
+    border: 3px solid #ff0000;
+}
+
+
+
+/*BOTTOM DE JEU*/
+#bottom{
+    border-top: 1px solid rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+#bottom div{
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    margin-right: 100px;
+
+}
+
+#bottom div:nth-child(3n){
+    margin-right: 0;
+}
+
+#pionorange{
+    background: #ff8419;
+}
+#pionvert{
+    background: #36c113;
+}
+#pionbleu{
+    background: #1994ff;
+}
+#pionjaune{
+    background: #c6bc00;
+}
+#pionrouge{
+    background: #ff1919;
+}
+#pionmarron{
+    background: #a65000;
+}
+
+.active {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#fin {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(216, 140, 0);
+    background: rgba(255, 211, 130, 0.883);
+    padding: 30px 60px;
+    color: rgb(216, 140, 0);
+    font-size: 80px;
+}
